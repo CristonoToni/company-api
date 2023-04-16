@@ -9,7 +9,7 @@ The Company Application to provide APIs using for getting Job Data with criteria
 # Getting Started
 
 ### Reference Documentation
-Please read API documentation as following:
+Please read API documentation as follows:
 * [API Swagger documentation](http://localhost:8080/swagger-ui.html)
 
 
