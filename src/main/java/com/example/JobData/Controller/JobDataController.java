@@ -36,6 +36,7 @@ public class JobDataController {
 	@GetMapping("/jobs")
 	@ApiOperation(value = "Get Job information with support query parameters", notes = "query parameters are introduced as follows")
 	public MappingJacksonValue getJobs(
+			@RequestHeader(value = "X-API-Version", defaultValue = "1") String apiVersion,
 			//filtering
 			@ApiParam(value = "Search by Job title")
 			@RequestParam(value = "job_title", required = false) String jobTitle,
