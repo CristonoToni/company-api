@@ -33,10 +33,9 @@ public class JobDataController {
 	@Value("${pagination.default.offset}")
 	private int defaultOffset;
 
-	@GetMapping("/jobs")
+	@GetMapping("v1/jobs")
 	@ApiOperation(value = "Get Job information with support query parameters", notes = "query parameters are introduced as follows")
 	public MappingJacksonValue getJobs(
-			@RequestHeader(value = "X-API-Version", defaultValue = "1") String apiVersion,
 			//filtering
 			@ApiParam(value = "Search by Job title")
 			@RequestParam(value = "job_title", required = false) String jobTitle,
